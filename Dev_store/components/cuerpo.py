@@ -38,7 +38,7 @@ class InfoProducto():
                         border=self.border_imagen,
                         box_shadow=self.box_shadow,) ,
 
-                    href="https://www.python.org/" , is_external=True),
+                    href=self.link , is_external=True),
 
                     rx.heading(self.nombre_producto , size=self.size),
                     rx.text(self.descripcion),
