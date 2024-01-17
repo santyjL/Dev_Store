@@ -26,8 +26,8 @@ def index() -> rx.Component:
                 rx.hstack(
                     cuerpo(),
                     margin=tamaños.MARGEN.value
-                )
-
+                ),
+        bg="#cbe4ea",
     )
 
 #

@@ -5,14 +5,14 @@ import reflex as rx
 
 class TamañosProductos(Enum):
     WIDTH_IMAGEN="25em"
-    HEIGHT_IMAGEN="6.6em"
+    HEIGHT_IMAGEN="10em"
     BORDES_RADIUS_IMAGEN="5px 15px "
     BORDER_IMAGEN="4px solid #555"
 
     BOX_SHADOW="sm"
     SIZE="sm"
     PADDING=3,
-    HEIGHT="20em",
+    HEIGHT="22em",
     WIDTH="26em",
     BORDES_RADIUS="5px 20px",
     BORDER="4px solid #555",
