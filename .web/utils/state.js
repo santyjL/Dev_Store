@@ -6,14 +6,11 @@ import env from "env.json";
 import Cookies from "universal-cookie";
 import { useEffect, useReducer, useRef, useState } from "react";
 import Router, { useRouter } from "next/router";
-import { initialEvents, initialState, onLoadInternalEvent } from "utils/context.js"
+import { initialEvents } from "utils/context.js"
 
 // Endpoint URLs.
 const EVENTURL = env.EVENT
 const UPLOADURL = env.UPLOAD
-
-// These hostnames indicate that the backend and frontend are reachable via the same domain.
-const SAME_DOMAIN_HOSTNAMES = ["localhost", "0.0.0.0", "::", "0:0:0:0:0:0:0:0"]
 
 // Global variable to hold the token.
 let token;
@@ -31,9 +28,6 @@ export const refs = {};
 let event_processing = false
 // Array holding pending events to be processed.
 const event_queue = [];
-
-// Pending upload promises, by id
-const upload_controllers = {};
 
 /**
  * Generate a UUID (Used for session tokens).
@@ -80,13 +74,12 @@ export const getToken = () => {
 export const getEventURL = () => {
   // Get backend URL object from the endpoint.
   const endpoint = new URL(EVENTURL);
-  if (SAME_DOMAIN_HOSTNAMES.includes(endpoint.hostname)) {
-    // Use the frontend domain to access the backend
+  if (endpoint.hostname === "localhost") {
+    // If the backend URL references localhost, and the frontend is not on localhost,
+    // then use the frontend host.
     const frontend_hostname = window.location.hostname;
-    endpoint.hostname = frontend_hostname;
-    if (window.location.protocol === "https:" && endpoint.protocol === "ws:") {
-      endpoint.protocol = "wss:";
-      endpoint.port = "";  // Assume websocket is on https port via load balancer.
+    if (frontend_hostname !== "localhost") {
+      endpoint.hostname = frontend_hostname;
     }
   }
   return endpoint
@@ -98,8 +91,35 @@ export const getEventURL = () => {
  * @param delta The delta to apply.
  */
 export const applyDelta = (state, delta) => {
-  return { ...state, ...delta }
+  const new_state = { ...state }
+  for (const substate in delta) {
+    let s = new_state;
+    const path = substate.split(".").slice(1);
+    while (path.length > 0) {
+      s = s[path.shift()];
+    }
+    for (const key in delta[substate]) {
+      s[key] = delta[substate][key];
+    }
+  }
+  return new_state
 };
+
+
+/**
+ * Get all local storage items in a key-value object.
+ * @returns object of items in local storage.
+ */
+export const getAllLocalStorageItems = () => {
+  var localStorageItems = {};
+
+  for (var i = 0, len = localStorage.length; i < len; i++) {
+    var key = localStorage.key(i);
+    localStorageItems[key] = localStorage.getItem(key);
+  }
+
+  return localStorageItems;
+}
 
 
 /**
@@ -151,8 +171,7 @@ export const applyEvent = async (event, socket) => {
     const a = document.createElement('a');
     a.hidden = true;
     a.href = event.payload.url;
-    if (event.payload.filename)
-      a.download = event.payload.filename;
+    a.download = event.payload.filename;
     a.click();
     a.remove();
     return false;
@@ -181,11 +200,7 @@ export const applyEvent = async (event, socket) => {
     try {
       const eval_result = eval(event.payload.javascript_code);
       if (event.payload.callback) {
-        if (!!eval_result && typeof eval_result.then === 'function') {
-          eval(event.payload.callback)(await eval_result)
-        } else {
-          eval(event.payload.callback)(eval_result)
-        }
+        eval(event.payload.callback)(eval_result)
       }
     } catch (e) {
       console.log("_call_script", e);
@@ -211,22 +226,14 @@ export const applyEvent = async (event, socket) => {
 /**
  * Send an event to the server via REST.
  * @param event The current event.
- * @param socket The socket object to send the response event(s) on.
+ * @param state The state with the event queue.
  *
  * @returns Whether the event was sent.
  */
-export const applyRestEvent = async (event, socket) => {
+export const applyRestEvent = async (event) => {
   let eventSent = false;
   if (event.handler == "uploadFiles") {
-    // Start upload, but do not wait for it, which would block other events.
-    uploadFiles(
-      event.name,
-      event.payload.files,
-      event.payload.upload_id,
-      event.payload.on_upload_progress,
-      socket
-    );
-    return false;
+    eventSent = await uploadFiles(event.name, event.payload.files);
   }
   return eventSent;
 };
@@ -267,7 +274,7 @@ export const processEvent = async (
   let eventSent = false
   // Process events with handlers via REST and all others via websockets.
   if (event.handler) {
-    eventSent = await applyRestEvent(event, socket);
+    eventSent = await applyRestEvent(event);
   } else {
     eventSent = await applyEvent(event, socket);
   }
@@ -317,9 +324,7 @@ export const connect = async (
   // On each received message, queue the updates and events.
   socket.current.on("event", message => {
     const update = JSON5.parse(message)
-    for (const substate in update.delta) {
-      dispatch[substate](update.delta[substate])
-    }
+    dispatch(update.delta)
     applyClientStorageDelta(client_storage, update.delta)
     event_processing = !update.final
     if (update.events) {
@@ -333,89 +338,50 @@ export const connect = async (
  *
  * @param state The state to apply the delta to.
  * @param handler The handler to use.
- * @param upload_id The upload id to use.
- * @param on_upload_progress The function to call on upload progress.
- * @param socket the websocket connection
  *
- * @returns The response from posting to the UPLOADURL endpoint.
+ * @returns Whether the files were uploaded.
  */
-export const uploadFiles = async (handler, files, upload_id, on_upload_progress, socket) => {
+export const uploadFiles = async (handler, files) => {
   // return if there's no file to upload
   if (files.length == 0) {
     return false;
   }
 
-  if (upload_controllers[upload_id]) {
-    console.log("Upload already in progress for ", upload_id)
-    return false;
-  }
-
-  let resp_idx = 0;
-  const eventHandler = (progressEvent) => {
-    // handle any delta / event streamed from the upload event handler
-    const chunks = progressEvent.event.target.responseText.trim().split("\n")
-    chunks.slice(resp_idx).map((chunk) => {
-      try {
-        socket._callbacks.$event.map((f) => {
-          f(chunk)
-        })
-        resp_idx += 1
-      } catch (e) {
-        if (progressEvent.progress === 1) {
-          // Chunk may be incomplete, so only report errors when full response is available.
-          console.log("Error parsing chunk", chunk, e)
-        }
-        return
-      }
-    })
-  }
-
-  const controller = new AbortController()
-  const config = {
-    headers: {
-      "Reflex-Client-Token": getToken(),
-      "Reflex-Event-Handler": handler,
-    },
-    signal: controller.signal,
-    onDownloadProgress: eventHandler,
-  }
-  if (on_upload_progress) {
-    config["onUploadProgress"] = on_upload_progress
-  }
+  const headers = {
+    "Content-Type": files[0].type,
+  };
   const formdata = new FormData();
 
   // Add the token and handler to the file name.
-  files.forEach((file) => {
+  for (let i = 0; i < files.length; i++) {
     formdata.append(
       "files",
-      file,
-      file.path || file.name
+      files[i],
+      getToken() + ":" + handler + ":" + files[i].name
     );
-  })
+  }
 
   // Send the file to the server.
-  upload_controllers[upload_id] = controller
-
-  try {
-    return await axios.post(UPLOADURL, formdata, config)
-  } catch (error) {
-    if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
-      console.log(error.response.data);
-    } else if (error.request) {
-      // The request was made but no response was received
-      // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-      // http.ClientRequest in node.js
-      console.log(error.request);
-    } else {
-      // Something happened in setting up the request that triggered an Error
-      console.log(error.message);
-    }
-    return false;
-  } finally {
-    delete upload_controllers[upload_id]
-  }
+  await axios.post(UPLOADURL, formdata, headers)
+    .then(() => { return true; })
+    .catch(
+      error => {
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          console.log(error.response.data);
+        } else if (error.request) {
+          // The request was made but no response was received
+          // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+          // http.ClientRequest in node.js
+          console.log(error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log(error.message);
+        }
+        return false;
+      }
+    )
 };
 
 /**
@@ -500,44 +466,36 @@ const applyClientStorageDelta = (client_storage, delta) => {
 
 /**
  * Establish websocket event loop for a NextJS page.
- * @param dispatch The reducer dispatch function to update state.
- * @param initial_events The initial app events.
+ * @param initial_state The initial app state.
+ * @param initial_events Function that returns the initial app events.
  * @param client_storage The client storage object from context.js
  *
- * @returns [addEvents, connectError] -
+ * @returns [state, addEvents, connectError] -
+ *   state is a reactive dict,
  *   addEvents is used to queue an event, and
  *   connectError is a reactive js error from the websocket connection (or null if connected).
  */
 export const useEventLoop = (
-  dispatch,
+  initial_state = {},
   initial_events = () => [],
   client_storage = {},
 ) => {
   const socket = useRef(null)
   const router = useRouter()
+  const [state, dispatch] = useReducer(applyDelta, initial_state)
   const [connectError, setConnectError] = useState(null)
 
   // Function to add new events to the event queue.
-  const addEvents = (events, _e, event_actions) => {
-    if (event_actions?.preventDefault && _e?.preventDefault) {
-      _e.preventDefault();
-    }
-    if (event_actions?.stopPropagation && _e?.stopPropagation) {
-      _e.stopPropagation();
-    }
+  const addEvents = (events, _e) => {
+    preventDefault(_e);
     queueEvents(events, socket)
   }
 
   const sentHydrate = useRef(false);  // Avoid double-hydrate due to React strict-mode
+  // initial state hydrate
   useEffect(() => {
     if (router.isReady && !sentHydrate.current) {
-    const events = initial_events()
-      addEvents(events.map((e) => (
-        {
-          ...e,
-          router_data: (({ pathname, query, asPath }) => ({ pathname, query, asPath }))(router)
-        }
-      )))
+      addEvents(initial_events())
       sentHydrate.current = true
     }
   }, [router.isReady])
@@ -549,7 +507,7 @@ export const useEventLoop = (
       return;
     }
     // only use websockets if state is present
-    if (Object.keys(initialState).length > 1) {
+    if (Object.keys(state).length > 0) {
       // Initialize the websocket connection.
       if (!socket.current) {
         connect(socket, dispatch, ['websocket', 'polling'], setConnectError, client_storage)
@@ -562,17 +520,7 @@ export const useEventLoop = (
       })()
     }
   })
-
-  // Route after the initial page hydration.
-  useEffect(() => {
-    const change_complete = () => addEvents(onLoadInternalEvent())
-    router.events.on('routeChangeComplete', change_complete)
-    return () => {
-      router.events.off('routeChangeComplete', change_complete)
-    }
-  }, [router])
-
-  return [addEvents, connectError]
+  return [state, addEvents, connectError]
 }
 
 /***
@@ -582,6 +530,16 @@ export const useEventLoop = (
  */
 export const isTrue = (val) => {
   return Array.isArray(val) ? val.length > 0 : !!val;
+};
+
+/**
+ * Prevent the default event for form submission.
+ * @param event
+ */
+export const preventDefault = (event) => {
+  if (event && event.type == "submit") {
+    event.preventDefault();
+  }
 };
 
 /**
@@ -611,7 +569,7 @@ export const getRefValues = (refs) => {
     return;
   }
   // getAttribute is used by RangeSlider because it doesn't assign value
-  return refs.map((ref) => ref.current ? ref.current.value || ref.current.getAttribute("aria-valuenow") : null);
+  return refs.map((ref) => ref.current.value || ref.current.getAttribute("aria-valuenow"));
 }
 
 /**

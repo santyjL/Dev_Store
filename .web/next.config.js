@@ -1,1 +1,6 @@
-module.exports = {basePath: "", compress: true, reactStrictMode: true, trailingSlash: true};
+module.exports = {
+  basePath: "",
+  compress: true,
+  reactStrictMode: true,
+  trailingSlash: true,
+};

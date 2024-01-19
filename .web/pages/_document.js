@@ -1,6 +1,3 @@
-/** @jsxImportSource @emotion/react */
-
-
 import { Head, Html, Main, NextScript } from "next/document"
 
 

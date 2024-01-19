@@ -3,6 +3,19 @@ from enum import Enum
 import reflex as rx
 
 
+class PaletaDeColores (Enum):
+    AZUL_OSCURO = "#010d23"
+    AZUL_INTERMEDIO = "#03223f"
+    CELESTE = "#038bbb"
+    CREMA = "#e19f41"
+    SKYBLUE = "#cbe4ea"
+
+class route(Enum):
+    SETUP = "setup"
+    SMART_HOME = "SmartHome"
+    MERCHANDISING = "Merchandising"
+    PERSONAL = "personal"
+
 class TamañosProductos(Enum):
     WIDTH_IMAGEN="25em"
     HEIGHT_IMAGEN="10em"

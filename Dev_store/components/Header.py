@@ -1,4 +1,3 @@
-import datetime
 
 import reflex as rx
 
@@ -8,7 +7,7 @@ from Dev_store.components import styles
 def presentacion() -> rx.components:
     return rx.box(
         rx.hstack(rx.span(rx.heading("bienvenido a la " ,
-                color="#038bbb",
+                color=styles.PaletaDeColores.CELESTE.value,
                 size="xl")),
 
         rx.span(rx.heading("DEV_STORE",
@@ -18,7 +17,7 @@ def presentacion() -> rx.components:
                 ))
         ),
         rx.heading("tienda tecnologica aficionada que lo disfrute" ,
-                color="#038bbb",
+                color=styles.PaletaDeColores.CELESTE.value,
                 size="md"),
         padding_y=styles.tamaños.ENORME.value
 
@@ -31,9 +30,15 @@ def encabezado() -> rx.Component:
             rx.heading(rx.text("DEV_STORE",
                                as_="i",
                                size=styles.tamaños.MEDIANO.value),
-            color="#038bbb"),
+            color=styles.PaletaDeColores.CELESTE.value),
+            rx.spacer(),
+            rx.link(rx.image(src="git hub logo.jpg",
+                             witch="4.5em" ,
+                             height="4.5em"),
+                    href="https://github.com/santyjL/Dev_Store",
+                    is_external=True),
 
-            bg="#e19f41",
+            bg=styles.PaletaDeColores.CREMA.value,
             position="fixed",
             width="100%",
             z_indez="5",
