@@ -4,7 +4,7 @@ import reflex as rx
 from Dev_store.components import styles
 
 
-def presentacion() -> rx.components:
+def presentacion(text : str) -> rx.components:
     return rx.box(
         rx.hstack(rx.span(rx.heading("bienvenido a la " ,
                 color=styles.PaletaDeColores.CELESTE.value,
@@ -16,7 +16,7 @@ def presentacion() -> rx.components:
                 size="2xl",
                 ))
         ),
-        rx.heading("tienda tecnologica aficionada que lo disfrute" ,
+        rx.heading(text ,
                 color=styles.PaletaDeColores.CELESTE.value,
                 size="md"),
         padding_y=styles.tamaños.ENORME.value
@@ -27,12 +27,17 @@ def presentacion() -> rx.components:
 def encabezado() -> rx.Component:
     return rx.box(
         rx.hstack(
-            rx.heading(rx.text("DEV_STORE",
+            rx.heading(
+                rx.link(
+                rx.text("DEV_STORE",
                                as_="i",
                                size=styles.tamaños.MEDIANO.value),
+            href=styles.route.Dev_Store.value,
             color=styles.PaletaDeColores.CELESTE.value),
+
+                ),
             rx.spacer(),
-            rx.link(rx.image(src="git hub logo.jpg",
+            rx.link(rx.image(src="/git hub logo.jpg",
                              witch="4.5em" ,
                              height="4.5em"),
                     href="https://github.com/santyjL/Dev_Store",

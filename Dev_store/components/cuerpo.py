@@ -1,6 +1,7 @@
 import reflex as rx
 
-from Dev_store.components.styles import PaletaDeColores, TamañosProductos
+from Dev_store.components.styles import (PaletaDeColores, TamañosProductos,
+                                         route)
 
 
 class InfoProducto():
@@ -55,45 +56,90 @@ class InfoProducto():
                     margin_y=self.margin
                 )
 
-
-#prodcutos general
-producto1 = InfoProducto(imagen="GK61.jpg" ,
+#productos setup
+producto1 = InfoProducto(imagen="/setup/GK61.jpg" ,
                              link="https://www.amazon.com/-/es/GK61-60-intercambiable-retroiluminado-Layout/dp/B0C77FTYW3/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=teclado+mecanico+g61&sr=8-1" ,
                              nombre_producto="teclado mecanico G61 Logitech" ,
                              precio="30.00$",
                              descripcion="Geeky GK61 60% - Teclado mecánico - 61 teclas multicolor RGB  retroiluminado para PC/Mac - Diseño americano ANSI US (azul, marrón mecánico)",
                              categoria="setup")
-producto2 = InfoProducto(imagen="monitor ULTRAWIDE.jpg" ,
+producto2 = InfoProducto(imagen="/setup/monitor ULTRAWIDE.jpg" ,
                              link="https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1" ,
                              nombre_producto="monitor ultrawide 32p''" ,
                              precio="300$.00$",
                              descripcion=
                              "GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2",
                              categoria="setup")
-producto3 = InfoProducto(imagen="Astro A10.jpg" ,
+producto3 = InfoProducto(imagen="/setup/Astro A10.jpg" ,
                              link="https://www.amazon.com/-/es/Astro-A10-Auriculares-micr%C3%B3fono-Playstation/dp/B0C381TXNZ/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=A10%2Bastros&sr=8-6&th=1" ,
                              nombre_producto="Astro A10" ,
                              precio="50.00$",descripcion=
                              "Astro A10 - Auriculares para juegos Gen 2 con cable, con micrófono abatible para silenciar, controladores de 1.260 in, para Xbox Series X|S, Xbox One, Playstation 5/4, Nintendo Switch, PC, Mac",
                              categoria="setup")
-producto4 = InfoProducto(imagen="G502 Hero.jpg",
+producto4 = InfoProducto(imagen="/setup/G502 Hero.jpg",
                        link="https://www.amazon.com/-/es/Logitech-G502-HERO-rendimiento-programables/dp/B07GBZ4Q68/ref=sr_1_1?keywords=logitech+mouse&sr=8-1"
                        ,nombre_producto="Logitech G502 HERO",
                        precio="43.00$",
                        descripcion=" Mouse de alto rendimiento con cable, sensor HERO 25K, 25,600$ ppp, RGB, pesos ajustables, 11 botones programables, memoria integrada, PC / Mac",
                        categoria="setup")
-producto5 = InfoProducto(imagen="silla ergonomica.jpg",
+producto5 = InfoProducto(imagen="/setup/silla ergonomica.jpg",
                          link="https://www.amazon.com/-/es/ergon%C3%B3mica-reposapi%C3%A9s-computadora-reposacabezas-reposabrazos/dp/B0C7C1B9D3/ref=cs_sr_dp_3?__mk_es_US=%EF%BF%BDM%EF%BF%BD%7D%EF%BF%BD%EF%BF%BD&keywords=silla+ergonomitca&sr=8-1",
                          nombre_producto="Silla de oficina ergonómica plegable",
                          precio="109.00$",
                          descripcion="silla de escritorio de computadora con respaldo alto y soporte lumbar ajustable, reposabrazos fijos, reposacabezas, mecedora de 90° a 110°, silla de escritorio de oficina en casa, fácil montaje, color negro",
                          categoria="setup")
-producto6 = InfoProducto(imagen="lapto.jpg",
+producto6 = InfoProducto(imagen="/setup/lapto.jpg",
                          link="https://www.amazon.com/-/es/LG-gram-Port%C3%A1til-pulgadas-plataforma/dp/B0BVXQQQRL/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=laptops%2B16%2Bram%2B%2C%2B512%2Bgb%2B%2C%2Bfull%2BHD%2B1080x1980%2B%2C%2B15%2C6pulgadas%2B%2C%2Bintel%2B12&sr=8-6&th=1",
                          nombre_producto="LG gram",
                          precio="1024.00$",
                          descripcion="Portátil ligero de 16 pulgadas, procesador Intel Core i7 13, Windows 11 Home, 16 GB de RAM, SSD de 512 GB, negro",
                          categoria="septup")
+
+#productos smart_home
+producto7=InfoProducto(imagen="/smart_home/alexa.jpg",
+                       link="https://www.amazon.com/-/es/dp/B0BF73CTQF?ref_=mars_gen_B07XJ8C8F5",
+                       nombre_producto="Alexa Dot 5.ª generación",
+                       precio="34.99$",
+                       descripcion=" Usa el Echo Dot para mantenerte al día con la ayuda de Alexa, controlar dispositivos de Smart Home e iniciar rutinas por movimiento.",
+                       categoria="smart_home")
+producto8=InfoProducto(imagen="/smart_home/aspiradora_robot.jpg",
+                       link="https://www.amazon.com/-/es/iRobot-Roomba-aspiradora-conectividad-compatible/dp/B08SP5GYJP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=aspiradora+robot&sr=8-1",
+                       nombre_producto="Robot Roomba",
+                       precio="126.38$",
+                       descripcion="  Robot aspiradora con conectividad Wi-Fi, compatible con Alexa",
+                       categoria="smart_home")
+producto9=InfoProducto(imagen="/smart_home/tira_led.jpg",
+                       link="https://www.amazon.com/sincronizaci%C3%B3n-bricolaje-decoraci%C3%B3n-dormitorio-compatible/dp/B09DCX12V4?ref_=ast_sto_dp&th=1led Govee",
+                       nombre_producto="tira led Govee",
+                       precio="54.99$",
+                       descripcion=" Tira de luces RGBIC de neón con sincronización de música, diseño de bricolaje, funciona con Alexa, Google Assistant, tira de luces LED de 10 pies para juegos, decoración de dormitorio y sala de estar ",
+                       categoria="smart_home")
+producto10=InfoProducto(imagen="/smart_home/tomas_corrientes.jpg",
+                       link="https://www.amazon.com/-/es/enchufes-inteligentes-Bluetooth-Assistant-inteligente/dp/B09LVN3PF8/ref=sr_1_11?keywords=tomacorriente+inteligente+alexa&sr=8-11",
+                       nombre_producto="tomas correintes inteligentes",
+                       precio="48.98$",
+                       descripcion=" Paquete de 2 enchufes inteligentes duales, toma Bluetooth WiFi de 15 A, funciona con Alexa y Google Assistant, paquete de diseño compacto 2 en 1 con enchufe inteligente Govee y enchufes WiFi",
+                       categoria="smart_home")
+
+
+def smart_home_productos() -> rx.components:
+        return rx.box(
+            rx.hstack(
+                producto7.productos(),
+                producto8.productos(),
+                producto9.productos(),
+            ),
+            rx.hstack(
+                producto10.productos()
+            ),
+        border_radius=TamañosProductos.BORDES_RADIUS.value,
+        border=TamañosProductos.BORDER.value,
+        box_shadow=TamañosProductos.BOX_SHADOW.value,
+        padding=TamañosProductos.PADDING.value,
+        bg="#000000",
+        width="100%"
+
+        )
 
 def setup_productos() -> rx.Component:
     return rx.box(
@@ -116,24 +162,61 @@ def setup_productos() -> rx.Component:
 
         )
 
-
 def categorias() -> rx.Component:
-        return rx.box(
-            rx.hstack(
-                producto1.productos(),
-                producto2.productos(),
-                producto2.productos(),
+    return rx.grid(
+        rx.hstack(
+
+            rx.box(
+                rx.heading("BIBLIOTECA" , size="xl"),
+                rx.link(
+                        rx.image(src="/libros.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                        href=route.BIBLIOTECA.value
+                    ),
+
+                bg="lightblue",
+                h="14em",
+                w="60%"),
+
+            rx.box(
+                rx.heading("MERCHANDISING" , size="xl"),
+                rx.link(
+                        rx.image(src="/Merchandising.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                        href=route.MERCHANDISING.value
+                    ),
+
+                bg="lightgreen",
+                h="14em" ,
+                w="40%"),
             ),
-            rx.hstack(
-                producto2.productos(),
-                producto2.productos(),
-                producto2.productos(),
-            ),
-        border_radius=TamañosProductos.BORDES_RADIUS.value,
-        border=TamañosProductos.BORDER.value,
-        box_shadow=TamañosProductos.BOX_SHADOW.value,
-        padding=TamañosProductos.PADDING.value,
-        bg="#000000",
-        width="100%"
+
+        rx.hstack(
+
+            rx.box(
+                rx.heading("SMARTHOME" , size="xl"),
+                rx.link(
+                    rx.image(src="/smarthome.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                    href=route.SMART_HOME.value
+                ),
+
+                bg="yellow",
+                h="14em" ,
+                w="40%",),
+
+            rx.box(
+                rx.heading("SETUP" , size="xl"),
+                rx.link(
+                    rx.image(src="/setup.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                    href=route.SETUP.value
+                ),
+
+                bg="orange",
+                h="14em" ,
+                w="60%",),
+        ),
+        bg = PaletaDeColores.CREMA.value,
+        h="30em",
+        width="100%",
+        padding=3
+
 
         )

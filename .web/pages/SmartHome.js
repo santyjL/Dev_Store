@@ -36,18 +36,20 @@ export default function Component() {
 
   return (
     <Fragment>
-  <Box sx={{"bg": "#cbe4ea", "width": "100%"}}>
+  <Box sx={{"bg": "linear-gradient(271.68deg, #F26008 0.75%, #FF3000 88.52%)", "width": "100%"}}>
   <HStack>
   <Box>
-  <HStack sx={{"bg": "#e19f41", "position": "fixed", "width": "100%", "zIndez": "5"}}>
-  <Heading sx={{"color": "#038bbb"}}>
+  <HStack sx={{"bg": "#464255", "position": "fixed", "width": "100%", "zIndez": "5"}}>
+  <Heading>
+  <Link as={NextLink} href={`Dev_Store`} sx={{"color": "#038bbb"}}>
   <Text as={`i`} sx={{"size": "1em"}}>
   {`DEV_STORE`}
 </Text>
+</Link>
 </Heading>
   <Spacer/>
   <Link as={NextLink} href={`https://github.com/santyjL/Dev_Store`} isExternal={true}>
-  <Image src={`git hub logo.jpg`} sx={{"witch": "4.5em", "height": "4.5em"}}/>
+  <Image src={`/git hub logo.jpg`} sx={{"witch": "4.5em", "height": "4.5em"}}/>
 </Link>
 </HStack>
 </Box>
@@ -67,7 +69,7 @@ export default function Component() {
 </Text>
 </HStack>
   <Heading size={`md`} sx={{"color": "#038bbb"}}>
-  {`tienda tecnologica aficionada que lo disfrute`}
+  {`tienda tecnologica apartedo de smart home`}
 </Heading>
 </Box>
 </HStack>
@@ -75,96 +77,68 @@ export default function Component() {
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GK61-60-intercambiable-retroiluminado-Layout/dp/B0C77FTYW3/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=teclado+mecanico+g61&sr=8-1`} isExternal={true}>
-  <Image src={`GK61.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B0BF73CTQF?ref_=mars_gen_B07XJ8C8F5`} isExternal={true}>
+  <Image src={`/smart_home/alexa.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`teclado mecanico G61 Logitech`}
+  {`Alexa Dot 5.ª generación`}
 </Heading>
   <Text>
-  {`Geeky GK61 60% - Teclado mecánico - 61 teclas multicolor RGB  retroiluminado para PC/Mac - Diseño americano ANSI US (azul, marrón mecánico)`}
+  {` Usa el Echo Dot para mantenerte al día con la ayuda de Alexa, controlar dispositivos de Smart Home e iniciar rutinas por movimiento.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 30.00$`}
+  {`PRECIO : 34.99$`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/iRobot-Roomba-aspiradora-conectividad-compatible/dp/B08SP5GYJP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=aspiradora+robot&sr=8-1`} isExternal={true}>
+  <Image src={`/smart_home/aspiradora_robot.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
+  {`Robot Roomba`}
 </Heading>
   <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
+  {`  Robot aspiradora con conectividad Wi-Fi, compatible con Alexa`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
+  {`PRECIO : 126.38$`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/sincronizaci%C3%B3n-bricolaje-decoraci%C3%B3n-dormitorio-compatible/dp/B09DCX12V4?ref_=ast_sto_dp&th=1led Govee`} isExternal={true}>
+  <Image src={`/smart_home/tira_led.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
+  {`tira led Govee`}
 </Heading>
   <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
+  {` Tira de luces RGBIC de neón con sincronización de música, diseño de bricolaje, funciona con Alexa, Google Assistant, tira de luces LED de 10 pies para juegos, decoración de dormitorio y sala de estar `}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
+  {`PRECIO : 54.99$`}
 </Badge>
 </Box>
 </HStack>
   <HStack>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/enchufes-inteligentes-Bluetooth-Assistant-inteligente/dp/B09LVN3PF8/ref=sr_1_11?keywords=tomacorriente+inteligente+alexa&sr=8-11`} isExternal={true}>
+  <Image src={`/smart_home/tomas_corrientes.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
+  {`tomas correintes inteligentes`}
 </Heading>
   <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
+  {` Paquete de 2 enchufes inteligentes duales, toma Bluetooth WiFi de 15 A, funciona con Alexa y Google Assistant, paquete de diseño compacto 2 en 1 con enchufe inteligente Govee y enchufes WiFi`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
-</Badge>
-</Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
-</Link>
-  <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
-</Heading>
-  <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
-</Text>
-  <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
-</Badge>
-</Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
-</Link>
-  <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
-</Heading>
-  <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
-</Text>
-  <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
+  {`PRECIO : 48.98$`}
 </Badge>
 </Box>
 </HStack>
 </Box>
 </HStack>
   <HStack>
-  <Box sx={{"bg": "#e19f41", "width": "100%", "zIndez": "5", "paddingX": 30}}>
+  <Box sx={{"bg": "#464255", "width": "100%", "zIndez": "5", "paddingX": 30}}>
   <Center>
   <HStack>
   <Text as={`span`}>
@@ -198,7 +172,7 @@ export default function Component() {
 </Box>
   <NextHead>
   <title>
-  {`Dev_Store`}
+  {`Reflex App`}
 </title>
   <meta content={`A Reflex app.`} name={`description`}/>
   <meta content={`favicon.ico`} property={`og:image`}/>

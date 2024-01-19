@@ -4,10 +4,11 @@ import reflex as rx
 from Dev_store.components.creditos import creditos
 from Dev_store.components.cuerpo import categorias
 from Dev_store.components.Header import encabezado, presentacion
-from Dev_store.components.styles import PaletaDeColores, tamaños
+from Dev_store.components.styles import PaletaDeColores, route, tamaños
 
 
-@rx.page(title="Dev_Store")
+@rx.page(route.Dev_Store.value,
+    title="Dev_Store")
 def index() -> rx.Component:
     return rx.box(
             rx.hstack(
@@ -15,7 +16,7 @@ def index() -> rx.Component:
             ),
 
                 rx.hstack(
-                    presentacion(),
+                    presentacion("tienda tecnologica aficionada que lo disfrute"),
                     margin=tamaños.MARGEN.value
             ),
                 rx.hstack(
