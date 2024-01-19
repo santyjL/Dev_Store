@@ -121,6 +121,77 @@ producto10=InfoProducto(imagen="/smart_home/tomas_corrientes.jpg",
                        descripcion=" Paquete de 2 enchufes inteligentes duales, toma Bluetooth WiFi de 15 A, funciona con Alexa y Google Assistant, paquete de diseño compacto 2 en 1 con enchufe inteligente Govee y enchufes WiFi",
                        categoria="smart_home")
 
+#productos libros libros
+producto11=InfoProducto(imagen="/libros/codigo limpio.jpg",
+                       link="https://www.amazon.es/dp/8441532109?creativeASIN=8441532109&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
+                       nombre_producto="Código Limpio",
+                       precio="49.87$",
+                       descripcion=" Manual de estilo para el desarrollo ágil de software (PROGRAMACIÓN)",
+                       categoria="libros")
+producto12 = InfoProducto(imagen="/libros/programador_pragmatico.jpg",
+                      link="https://www.amazon.com/Programador-Pragmatico-El-Spanish/dp/020161622X",
+                      nombre_producto="El Programador Pragmático",
+                      precio="37.95",
+                      descripcion="Un clásico en la programación, aborda conceptos prácticos y eficientes para desarrolladores.",
+                      categoria="Libros de Programación")
+producto13 = InfoProducto(imagen="/libros/curso_intensivo_python.jpg",
+                      link="https://www.amazon.es/dp/B0CLD7RPNS?creativeASIN=B0CLD7RPNS&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
+                      nombre_producto="Curso Intensivo de Python",
+                      precio="49.87",
+                      descripcion="Ideal para aprendices como tú, proporciona una inmersión profunda en Python con ejercicios prácticos.",
+                      categoria="Libros de Programación")
+producto14 = InfoProducto(imagen="/libros/habitos_atomicos.jpg",
+                      link="https://www.amazon.es/dp/B085G3G2CY?creativeASIN=B085G3G2CY&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
+                      nombre_producto="Hábitos Atómicos",
+                      precio="19.00",
+                      descripcion="Explora cómo pequeños cambios en los hábitos pueden conducir a resultados extraordinarios.",
+                      categoria="Desarrollo Personal")
+producto15 = InfoProducto(imagen="/libros/biografia_steve_jobs.jpg",
+                      link="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537",
+                      nombre_producto="Biografía de Steve Jobs",
+                      precio="21.19",
+                      descripcion="Un relato detallado sobre la vida del cofundador de Apple, ofreciendo perspectivas inspiradoras.",
+                      categoria="Biografías")
+producto16 = InfoProducto(imagen="/libros/padre_rico_padre_pobre.jpg",
+                      link="https://www.amazon.com/Padre-rico-pobre-Rich-Father/dp/1612680194",
+                      nombre_producto="Padre Rico, Padre Pobre",
+                      precio="6.39",
+                      descripcion="Aborda conceptos financieros esenciales, proporcionando una perspectiva única sobre el dinero.",
+                      categoria="Finanzas Personales")
+producto17 = InfoProducto(imagen="/libros/7_habitos_gente_efectiva.jpg",
+                      link="https://www.amazon.es/dp/8408143980?creativeASIN=8408143980&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
+                      nombre_producto="Los 7 Hábitos de la Gente Altamente Efectiva",
+                      precio="10.17",
+                      descripcion="Un clásico sobre liderazgo personal y eficacia, destacando hábitos fundamentales.",
+                      categoria="Desarrollo Personal")
+
+#Merchandising
+
+
+def libros_productos() -> rx.Component:
+    return rx.box(
+            rx.hstack(
+                producto11.productos(),
+                producto12.productos(),
+                producto13.productos(),
+            ),
+            rx.hstack(
+                producto14.productos(),
+                producto15.productos(),
+                producto16.productos(),
+            ),
+            rx.hstack(
+                producto17.productos(),
+
+            ),
+        border_radius=TamañosProductos.BORDES_RADIUS.value,
+        border=TamañosProductos.BORDER.value,
+        box_shadow=TamañosProductos.BOX_SHADOW.value,
+        padding=TamañosProductos.PADDING.value,
+        bg="#000000",
+        width="100%"
+
+        )
 
 def smart_home_productos() -> rx.components:
         return rx.box(

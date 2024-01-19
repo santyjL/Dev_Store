@@ -69,7 +69,7 @@ export default function Component() {
 </Text>
 </HStack>
   <Heading size={`md`} sx={{"color": "#038bbb"}}>
-  {`tienda tecnologica apartedo de setup`}
+  {`tienda tecnologica apartado de biblioteca`}
 </Heading>
 </Box>
 </HStack>
@@ -77,89 +77,105 @@ export default function Component() {
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GK61-60-intercambiable-retroiluminado-Layout/dp/B0C77FTYW3/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=teclado+mecanico+g61&sr=8-1`} isExternal={true}>
-  <Image src={`/setup/GK61.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.es/dp/8441532109?creativeASIN=8441532109&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
+  <Image src={`/libros/codigo limpio.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`teclado mecanico G61 Logitech`}
+  {`Código Limpio`}
 </Heading>
   <Text>
-  {`Geeky GK61 60% - Teclado mecánico - 61 teclas multicolor RGB  retroiluminado para PC/Mac - Diseño americano ANSI US (azul, marrón mecánico)`}
+  {` Manual de estilo para el desarrollo ágil de software (PROGRAMACIÓN)`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 30.00$`}
+  {`PRECIO : 49.87$`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
-  <Image src={`/setup/monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/Programador-Pragmatico-El-Spanish/dp/020161622X`} isExternal={true}>
+  <Image src={`/libros/programador_pragmatico.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`monitor ultrawide 32p''`}
+  {`El Programador Pragmático`}
 </Heading>
   <Text>
-  {`GIGABYTE M32UC 32'' 144Hz 4K UHD - Monitor curvado - SS VA, pantalla 3840x2160, tiempo de respuesta de 1 ms, 1 DisplayPort 1.4, 2 HDMI 2.1, 1 USB tipo C, 4 USB 3.2`}
+  {`Un clásico en la programación, aborda conceptos prácticos y eficientes para desarrolladores.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 300$.00$`}
+  {`PRECIO : 37.95`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/Astro-A10-Auriculares-micr%C3%B3fono-Playstation/dp/B0C381TXNZ/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=A10%2Bastros&sr=8-6&th=1`} isExternal={true}>
-  <Image src={`/setup/Astro A10.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.es/dp/B0CLD7RPNS?creativeASIN=B0CLD7RPNS&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
+  <Image src={`/libros/curso_intensivo_python.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`Astro A10`}
+  {`Curso Intensivo de Python`}
 </Heading>
   <Text>
-  {`Astro A10 - Auriculares para juegos Gen 2 con cable, con micrófono abatible para silenciar, controladores de 1.260 in, para Xbox Series X|S, Xbox One, Playstation 5/4, Nintendo Switch, PC, Mac`}
+  {`Ideal para aprendices como tú, proporciona una inmersión profunda en Python con ejercicios prácticos.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 50.00$`}
+  {`PRECIO : 49.87`}
 </Badge>
 </Box>
 </HStack>
   <HStack>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/Logitech-G502-HERO-rendimiento-programables/dp/B07GBZ4Q68/ref=sr_1_1?keywords=logitech+mouse&sr=8-1`} isExternal={true}>
-  <Image src={`/setup/G502 Hero.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.es/dp/B085G3G2CY?creativeASIN=B085G3G2CY&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
+  <Image src={`/libros/habitos_atomicos.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`Logitech G502 HERO`}
+  {`Hábitos Atómicos`}
 </Heading>
   <Text>
-  {` Mouse de alto rendimiento con cable, sensor HERO 25K, 25,600$ ppp, RGB, pesos ajustables, 11 botones programables, memoria integrada, PC / Mac`}
+  {`Explora cómo pequeños cambios en los hábitos pueden conducir a resultados extraordinarios.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 43.00$`}
+  {`PRECIO : 19.00`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/ergon%C3%B3mica-reposapi%C3%A9s-computadora-reposacabezas-reposabrazos/dp/B0C7C1B9D3/ref=cs_sr_dp_3?__mk_es_US=%EF%BF%BDM%EF%BF%BD%7D%EF%BF%BD%EF%BF%BD&keywords=silla+ergonomitca&sr=8-1`} isExternal={true}>
-  <Image src={`/setup/silla ergonomica.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537`} isExternal={true}>
+  <Image src={`/libros/biografia_steve_jobs.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`Silla de oficina ergonómica plegable`}
+  {`Biografía de Steve Jobs`}
 </Heading>
   <Text>
-  {`silla de escritorio de computadora con respaldo alto y soporte lumbar ajustable, reposabrazos fijos, reposacabezas, mecedora de 90° a 110°, silla de escritorio de oficina en casa, fácil montaje, color negro`}
+  {`Un relato detallado sobre la vida del cofundador de Apple, ofreciendo perspectivas inspiradoras.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 109.00$`}
+  {`PRECIO : 21.19`}
 </Badge>
 </Box>
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
-  <Link as={NextLink} href={`https://www.amazon.com/-/es/LG-gram-Port%C3%A1til-pulgadas-plataforma/dp/B0BVXQQQRL/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=laptops%2B16%2Bram%2B%2C%2B512%2Bgb%2B%2C%2Bfull%2BHD%2B1080x1980%2B%2C%2B15%2C6pulgadas%2B%2C%2Bintel%2B12&sr=8-6&th=1`} isExternal={true}>
-  <Image src={`/setup/lapto.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Link as={NextLink} href={`https://www.amazon.com/Padre-rico-pobre-Rich-Father/dp/1612680194`} isExternal={true}>
+  <Image src={`/libros/padre_rico_padre_pobre.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
 </Link>
   <Heading size={`sm`}>
-  {`LG gram`}
+  {`Padre Rico, Padre Pobre`}
 </Heading>
   <Text>
-  {`Portátil ligero de 16 pulgadas, procesador Intel Core i7 13, Windows 11 Home, 16 GB de RAM, SSD de 512 GB, negro`}
+  {`Aborda conceptos financieros esenciales, proporcionando una perspectiva única sobre el dinero.`}
 </Text>
   <Badge colorScheme={`skyBlue`} variant={`solid`}>
-  {`PRECIO : 1024.00$`}
+  {`PRECIO : 6.39`}
+</Badge>
+</Box>
+</HStack>
+  <HStack>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.es/dp/8408143980?creativeASIN=8408143980&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
+  <Image src={`/libros/7_habitos_gente_efectiva.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+</Link>
+  <Heading size={`sm`}>
+  {`Los 7 Hábitos de la Gente Altamente Efectiva`}
+</Heading>
+  <Text>
+  {`Un clásico sobre liderazgo personal y eficacia, destacando hábitos fundamentales.`}
+</Text>
+  <Badge colorScheme={`skyBlue`} variant={`solid`}>
+  {`PRECIO : 10.17`}
 </Badge>
 </Box>
 </HStack>
