@@ -77,9 +77,15 @@ export default function Component() {
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B0BF73CTQF?ref_=mars_gen_B07XJ8C8F5`} isExternal={true}>
   <Image src={`/smart_home/alexa.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B0BF73CTQF?ref_=mars_gen_B07XJ8C8F5`} isExternal={true}>
+  <Image src={`/smart_home/alexa.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B0BF73CTQF?ref_=mars_gen_B07XJ8C8F5`} isExternal={true}>
@@ -97,9 +103,15 @@ export default function Component() {
 </Badge>
 </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/iRobot-Roomba-aspiradora-conectividad-compatible/dp/B08SP5GYJP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=aspiradora+robot&sr=8-1`} isExternal={true}>
   <Image src={`/smart_home/aspiradora_robot.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/iRobot-Roomba-aspiradora-conectividad-compatible/dp/B08SP5GYJP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=aspiradora+robot&sr=8-1`} isExternal={true}>
+  <Image src={`/smart_home/aspiradora_robot.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/iRobot-Roomba-aspiradora-conectividad-compatible/dp/B08SP5GYJP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=aspiradora+robot&sr=8-1`} isExternal={true}>
@@ -117,9 +129,15 @@ export default function Component() {
 </Badge>
 </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/sincronizaci%C3%B3n-bricolaje-decoraci%C3%B3n-dormitorio-compatible/dp/B09DCX12V4?ref_=ast_sto_dp&th=1led Govee`} isExternal={true}>
   <Image src={`/smart_home/tira_led.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/sincronizaci%C3%B3n-bricolaje-decoraci%C3%B3n-dormitorio-compatible/dp/B09DCX12V4?ref_=ast_sto_dp&th=1led Govee`} isExternal={true}>
+  <Image src={`/smart_home/tira_led.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/sincronizaci%C3%B3n-bricolaje-decoraci%C3%B3n-dormitorio-compatible/dp/B09DCX12V4?ref_=ast_sto_dp&th=1led Govee`} isExternal={true}>
@@ -139,9 +157,15 @@ export default function Component() {
 </HStack>
   <HStack>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/enchufes-inteligentes-Bluetooth-Assistant-inteligente/dp/B09LVN3PF8/ref=sr_1_11?keywords=tomacorriente+inteligente+alexa&sr=8-11`} isExternal={true}>
   <Image src={`/smart_home/tomas_corrientes.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/enchufes-inteligentes-Bluetooth-Assistant-inteligente/dp/B09LVN3PF8/ref=sr_1_11?keywords=tomacorriente+inteligente+alexa&sr=8-11`} isExternal={true}>
+  <Image src={`/smart_home/tomas_corrientes.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/enchufes-inteligentes-Bluetooth-Assistant-inteligente/dp/B09LVN3PF8/ref=sr_1_11?keywords=tomacorriente+inteligente+alexa&sr=8-11`} isExternal={true}>

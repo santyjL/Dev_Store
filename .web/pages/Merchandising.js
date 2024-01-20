@@ -77,9 +77,15 @@ export default function Component() {
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B01L6BVRYY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=gorra+depython&sr=8-2`} isExternal={true}>
   <Image src={`/merchandising/gorra_python.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B01L6BVRYY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=gorra+depython&sr=8-2`} isExternal={true}>
+  <Image src={`/merchandising/gorra_python.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/dp/B01L6BVRYY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=gorra+depython&sr=8-2`} isExternal={true}>
@@ -97,9 +103,15 @@ export default function Component() {
 </Badge>
 </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Ubuntu-Camiseta-Divertido-Algod%C3%B3n-Hombres/dp/B0BCWGN2JK/ref=sr_1_17?keywords=linux+t+shirt&sr=8-17`} isExternal={true}>
   <Image src={`/merchandising/ubuntu_camiseta.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/Ubuntu-Camiseta-Divertido-Algod%C3%B3n-Hombres/dp/B0BCWGN2JK/ref=sr_1_17?keywords=linux+t+shirt&sr=8-17`} isExternal={true}>
+  <Image src={`/merchandising/ubuntu_camiseta.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Ubuntu-Camiseta-Divertido-Algod%C3%B3n-Hombres/dp/B0BCWGN2JK/ref=sr_1_17?keywords=linux+t+shirt&sr=8-17`} isExternal={true}>
@@ -117,9 +129,15 @@ export default function Component() {
 </Badge>
 </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Neural-Network-aprendizaje-autom%C3%A1tico-Tensorflow/dp/B0BJZ945GB/ref=sr_1_42?keywords=python+shirt&sr=8-42`} isExternal={true}>
   <Image src={`/merchandising/python_neural_network.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/Neural-Network-aprendizaje-autom%C3%A1tico-Tensorflow/dp/B0BJZ945GB/ref=sr_1_42?keywords=python+shirt&sr=8-42`} isExternal={true}>
+  <Image src={`/merchandising/python_neural_network.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Neural-Network-aprendizaje-autom%C3%A1tico-Tensorflow/dp/B0BJZ945GB/ref=sr_1_42?keywords=python+shirt&sr=8-42`} isExternal={true}>
@@ -139,9 +157,15 @@ export default function Component() {
 </HStack>
   <HStack>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/Desktop-Decor-Golang-Mascot-Gopher/dp/B0C1CSSV2Z`} isExternal={true}>
   <Image src={`/merchandising/golang_mascot_gopher.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/Desktop-Decor-Golang-Mascot-Gopher/dp/B0C1CSSV2Z`} isExternal={true}>
+  <Image src={`/merchandising/golang_mascot_gopher.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/Desktop-Decor-Golang-Mascot-Gopher/dp/B0C1CSSV2Z`} isExternal={true}>
@@ -159,9 +183,15 @@ export default function Component() {
 </Badge>
 </Box>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Camiseta-Arduino-Know-Makers-Negro/dp/B079K9MMXJ`} isExternal={true}>
   <Image src={`/merchandising/arduino_know_makers.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/Camiseta-Arduino-Know-Makers-Negro/dp/B079K9MMXJ`} isExternal={true}>
+  <Image src={`/merchandising/arduino_know_makers.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 =======
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Camiseta-Arduino-Know-Makers-Negro/dp/B079K9MMXJ`} isExternal={true}>
