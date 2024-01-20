@@ -76,7 +76,7 @@ export default function Component() {
   <HStack sx={{"margin": "3em"}}>
   <Grid sx={{"bg": "#464255", "h": "30em", "width": "100%", "padding": 3}}>
   <HStack>
-  <Box sx={{"bg": "lightblue", "h": "14em", "w": "60%"}}>
+  <Box sx={{"bg": "lightblue", "h": "14em", "w": "40%"}}>
   <Heading size={`xl`}>
   {`BIBLIOTECA`}
 </Heading>
@@ -84,6 +84,7 @@ export default function Component() {
   <Image src={`/libros.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
+  <Spacer sx={{"bg": "white"}}/>
   <Box sx={{"bg": "lightgreen", "h": "14em", "w": "40%"}}>
   <Heading size={`xl`}>
   {`MERCHANDISING`}
@@ -102,7 +103,8 @@ export default function Component() {
   <Image src={`/smarthome.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
-  <Box sx={{"bg": "orange", "h": "14em", "w": "60%"}}>
+  <Spacer sx={{"bg": "white"}}/>
+  <Box sx={{"bg": "orange", "h": "14em", "w": "40%"}}>
   <Heading size={`xl`}>
   {`SETUP`}
 </Heading>
