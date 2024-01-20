@@ -37,11 +37,10 @@ def encabezado() -> rx.Component:
 
                 ),
             rx.spacer(),
-            rx.link(rx.image(src="/git hub logo.jpg",
-                             witch="4.5em" ,
-                             height="4.5em"),
+            rx.link(rx.image(src="/git hub logo.jpg", width="4.5em", height="4.5em"),
                     href="https://github.com/santyjL/Dev_Store",
                     is_external=True),
+
 
             bg=styles.PaletaDeColores.GRIS.value,
             position="fixed",

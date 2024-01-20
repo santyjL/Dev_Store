@@ -10,23 +10,29 @@ from Dev_store.components.styles import PaletaDeColores, route, tamaños
 
 @rx.page(route=route.MERCHANDISING.value)
 def merchandising() -> rx.Component:
-    return rx.box(
-            rx.hstack(
-                encabezado(),
-            ),
+    # Encabezado
+    header_section = rx.hstack(encabezado())
 
-                rx.hstack(
-                    presentacion("tienda tecnologica apartado de Merchandising"),
-                    margin=tamaños.MARGEN.value
-            ),
-                rx.hstack(
-                    Merchandising_productos(),
-                    margin=tamaños.MARGEN.value
-                ),
-            rx.hstack(
-                creditos(),
-            ),
+    # Presentación
+    presentation_section = rx.hstack(
+        presentacion("tienda tecnologica apartado de Merchandising"),
+        margin=tamaños.MARGEN.value
+    )
+
+    # Productos de Merchandising
+    merchandising_section = rx.hstack(
+        Merchandising_productos(),
+        margin=tamaños.MARGEN.value
+    )
+
+    # Créditos
+    credits_section = rx.hstack(creditos())
+
+    return rx.box(
+        header_section,
+        presentation_section,
+        merchandising_section,
+        credits_section,
         bg=PaletaDeColores.FONDO_GRADIENTE.value,
         width="100%"
     )
-

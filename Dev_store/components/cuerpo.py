@@ -39,7 +39,9 @@ class InfoProducto():
                         height=self.height_imagen,
                         border_radius=self.border_radius_imagen,
                         border=self.border_imagen,
-                        box_shadow=self.box_shadow,) ,
+                        box_shadow=self.box_shadow,
+                        white_space = "normal",
+                        text_alling= "start") ,
 
                     href=self.link , is_external=True),
 
@@ -53,8 +55,9 @@ class InfoProducto():
                     border_radius=self.border_radius,
                     border=self.border,
                     box_shadow=self.box_shadow,
-                    margin_y=self.margin
-                )
+                    margin_y=self.margin,
+                    white_space = "normal",
+                    text_alling= "start")
 
 #productos setup
 producto1 = InfoProducto(imagen="/setup/GK61.jpg" ,
@@ -187,13 +190,13 @@ producto20 = InfoProducto(imagen="/merchandising/python_neural_network.jpg",
 producto21 = InfoProducto(imagen="/merchandising/golang_mascot_gopher.jpg",
                           link="https://www.amazon.com/Desktop-Decor-Golang-Mascot-Gopher/dp/B0C1CSSV2Z",
                           nombre_producto="Figura de Escritorio Golang Mascot Gopher",
-                          precio="20.00",
+                          precio="20.00$",
                           descripcion="Decora tu escritorio con esta encantadora figura del Gopher, la mascota de Golang. Perfecta para los amantes de este lenguaje de programación.",
                           categoria="Merchandising")
 producto22 = InfoProducto(imagen="/merchandising/arduino_know_makers.jpg",
                           link="https://www.amazon.com/-/es/Camiseta-Arduino-Know-Makers-Negro/dp/B079K9MMXJ",
                           nombre_producto="Camiseta Arduino Know Makers",
-                          precio="10.00",
+                          precio="10.00$",
                           descripcion="Demuestra tu pasión por Arduino con esta genial camiseta. Perfecta para los entusiastas de la electrónica y la creación de proyectos.",
                           categoria="Merchandising")
 
@@ -292,7 +295,7 @@ def categorias() -> rx.Component:
             rx.box(
                 rx.heading("BIBLIOTECA" , size="xl"),
                 rx.link(
-                        rx.image(src="/libros.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                        rx.image(src="/libros_.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
                         href=route.BIBLIOTECA.value
                     ),
 
@@ -303,7 +306,7 @@ def categorias() -> rx.Component:
             rx.box(
                 rx.heading("MERCHANDISING" , size="xl"),
                 rx.link(
-                        rx.image(src="/Merchandising.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                        rx.image(src="/Merchandising_.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
                         href=route.MERCHANDISING.value
                     ),
 
@@ -317,7 +320,7 @@ def categorias() -> rx.Component:
             rx.box(
                 rx.heading("SMARTHOME" , size="xl"),
                 rx.link(
-                    rx.image(src="/smarthome.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                    rx.image(src="/smarthome_.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
                     href=route.SMART_HOME.value
                 ),
 
@@ -328,7 +331,7 @@ def categorias() -> rx.Component:
             rx.box(
                 rx.heading("SETUP" , size="xl"),
                 rx.link(
-                    rx.image(src="/setup.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
+                    rx.image(src="/setup_.jpg" ,h="11.7em" ,w="100%" ,padding=2 ),
                     href=route.SETUP.value
                 ),
 

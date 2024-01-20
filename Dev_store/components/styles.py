@@ -26,7 +26,7 @@ class TamañosProductos(Enum):
     BOX_SHADOW="sm"
     SIZE="sm"
     PADDING=3,
-    HEIGHT="22em",
+    HEIGHT="28em",
     WIDTH="26em",
     BORDES_RADIUS="5px 20px",
     BORDER="4px solid #555",

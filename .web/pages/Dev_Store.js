@@ -49,7 +49,7 @@ export default function Component() {
 </Heading>
   <Spacer/>
   <Link as={NextLink} href={`https://github.com/santyjL/Dev_Store`} isExternal={true}>
-  <Image src={`/git hub logo.jpg`} sx={{"witch": "4.5em", "height": "4.5em"}}/>
+  <Image src={`/git hub logo.jpg`} sx={{"width": "4.5em", "height": "4.5em"}}/>
 </Link>
 </HStack>
 </Box>
@@ -81,7 +81,7 @@ export default function Component() {
   {`BIBLIOTECA`}
 </Heading>
   <Link as={NextLink} href={`biblioteca`}>
-  <Image src={`/libros.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
+  <Image src={`/libros_.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
   <Box sx={{"bg": "lightgreen", "h": "14em", "w": "40%"}}>
@@ -89,7 +89,7 @@ export default function Component() {
   {`MERCHANDISING`}
 </Heading>
   <Link as={NextLink} href={`Merchandising`}>
-  <Image src={`/Merchandising.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
+  <Image src={`/Merchandising_.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
 </HStack>
@@ -99,7 +99,7 @@ export default function Component() {
   {`SMARTHOME`}
 </Heading>
   <Link as={NextLink} href={`SmartHome`}>
-  <Image src={`/smarthome.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
+  <Image src={`/smarthome_.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
   <Box sx={{"bg": "orange", "h": "14em", "w": "60%"}}>
@@ -107,19 +107,19 @@ export default function Component() {
   {`SETUP`}
 </Heading>
   <Link as={NextLink} href={`setup`}>
-  <Image src={`/setup.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
+  <Image src={`/setup_.jpg`} sx={{"h": "11.7em", "w": "100%", "padding": 2}}/>
 </Link>
 </Box>
 </HStack>
 </Grid>
 </HStack>
   <HStack>
-  <Box sx={{"bg": "#464255", "width": "100%", "zIndez": "5", "paddingX": 30}}>
+  <Box sx={{"bg": "#464255", "width": "100%", "zIndex": "5", "paddingX": 30}}>
   <Center>
   <HStack>
   <Text as={`span`}>
   <Text sx={{"color": "#038bbb", "fontSize": "1em", "fontWeight": "bold"}}>
-  {`hola mundo este este es mi primer sitio web ,  la idea viene de`}
+  {`hola mundo este es mi primer sitio web 2023/2024, la idea viene de`}
 </Text>
 </Text>
   <Text as={`span`}>

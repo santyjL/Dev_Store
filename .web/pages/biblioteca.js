@@ -49,7 +49,7 @@ export default function Component() {
 </Heading>
   <Spacer/>
   <Link as={NextLink} href={`https://github.com/santyjL/Dev_Store`} isExternal={true}>
-  <Image src={`/git hub logo.jpg`} sx={{"witch": "4.5em", "height": "4.5em"}}/>
+  <Image src={`/git hub logo.jpg`} sx={{"width": "4.5em", "height": "4.5em"}}/>
 </Link>
 </HStack>
 </Box>
@@ -76,9 +76,9 @@ export default function Component() {
   <HStack sx={{"margin": "3em"}}>
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.es/dp/8441532109?creativeASIN=8441532109&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
-  <Image src={`/libros/codigo limpio.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/codigo limpio.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Código Limpio`}
@@ -90,9 +90,9 @@ export default function Component() {
   {`PRECIO : 49.87$`}
 </Badge>
 </Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/Programador-Pragmatico-El-Spanish/dp/020161622X`} isExternal={true}>
-  <Image src={`/libros/programador_pragmatico.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/programador_pragmatico.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`El Programador Pragmático`}
@@ -104,9 +104,9 @@ export default function Component() {
   {`PRECIO : 37.95`}
 </Badge>
 </Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.es/dp/B0CLD7RPNS?creativeASIN=B0CLD7RPNS&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
-  <Image src={`/libros/curso_intensivo_python.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/curso_intensivo_python.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Curso Intensivo de Python`}
@@ -120,9 +120,9 @@ export default function Component() {
 </Box>
 </HStack>
   <HStack>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.es/dp/B085G3G2CY?creativeASIN=B085G3G2CY&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
-  <Image src={`/libros/habitos_atomicos.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/habitos_atomicos.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Hábitos Atómicos`}
@@ -134,9 +134,9 @@ export default function Component() {
   {`PRECIO : 19.00`}
 </Badge>
 </Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537`} isExternal={true}>
-  <Image src={`/libros/biografia_steve_jobs.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/biografia_steve_jobs.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Biografía de Steve Jobs`}
@@ -148,9 +148,9 @@ export default function Component() {
   {`PRECIO : 21.19`}
 </Badge>
 </Box>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/Padre-rico-pobre-Rich-Father/dp/1612680194`} isExternal={true}>
-  <Image src={`/libros/padre_rico_padre_pobre.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/padre_rico_padre_pobre.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Padre Rico, Padre Pobre`}
@@ -164,9 +164,9 @@ export default function Component() {
 </Box>
 </HStack>
   <HStack>
-  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["22em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.es/dp/8408143980?creativeASIN=8408143980&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin`} isExternal={true}>
-  <Image src={`/libros/7_habitos_gente_efectiva.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm"}}/>
+  <Image src={`/libros/7_habitos_gente_efectiva.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
 </Link>
   <Heading size={`sm`}>
   {`Los 7 Hábitos de la Gente Altamente Efectiva`}
@@ -182,12 +182,12 @@ export default function Component() {
 </Box>
 </HStack>
   <HStack>
-  <Box sx={{"bg": "#464255", "width": "100%", "zIndez": "5", "paddingX": 30}}>
+  <Box sx={{"bg": "#464255", "width": "100%", "zIndex": "5", "paddingX": 30}}>
   <Center>
   <HStack>
   <Text as={`span`}>
   <Text sx={{"color": "#038bbb", "fontSize": "1em", "fontWeight": "bold"}}>
-  {`hola mundo este este es mi primer sitio web ,  la idea viene de`}
+  {`hola mundo este es mi primer sitio web 2023/2024, la idea viene de`}
 </Text>
 </Text>
   <Text as={`span`}>
