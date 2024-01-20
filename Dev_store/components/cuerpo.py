@@ -166,7 +166,59 @@ producto17 = InfoProducto(imagen="/libros/7_habitos_gente_efectiva.jpg",
                       categoria="Desarrollo Personal")
 
 #Merchandising
+producto18 = InfoProducto(imagen="/merchandising/gorra_python.jpg",
+                          link="https://www.amazon.com/-/es/dp/B01L6BVRYY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=gorra+depython&sr=8-2",
+                          nombre_producto="Gorra de Béisbol con Programación Python",
+                          precio="8.99$",
+                          descripcion="Otra opción genial de gorra con diseño de Python. Ideal para mostrar tu amor por la programación con estilo.",
+                          categoria="Merchandising")
+producto19 = InfoProducto(imagen="/merchandising/ubuntu_camiseta.jpg",
+                          link="https://www.amazon.com/-/es/Ubuntu-Camiseta-Divertido-Algod%C3%B3n-Hombres/dp/B0BCWGN2JK/ref=sr_1_17?keywords=linux+t+shirt&sr=8-17",
+                          nombre_producto="Camiseta de Ubuntu",
+                          precio="10.44$",
+                          descripcion="Demuestra tu amor por Linux con esta divertida camiseta de Ubuntu. Hecha de algodón para mayor comodidad.",
+                          categoria="Merchandising")
+producto20 = InfoProducto(imagen="/merchandising/python_neural_network.jpg",
+                          link="https://www.amazon.com/-/es/Neural-Network-aprendizaje-autom%C3%A1tico-Tensorflow/dp/B0BJZ945GB/ref=sr_1_42?keywords=python+shirt&sr=8-42",
+                          nombre_producto="Camiseta Python Neural Network",
+                          precio="11.00$",
+                          descripcion="Camiseta perfecta para los entusiastas de Python y el aprendizaje automático. Muestra tu pasión por la programación y las redes neuronales con estilo.",
+                          categoria="Merchandising")
+producto21 = InfoProducto(imagen="/merchandising/golang_mascot_gopher.jpg",
+                          link="https://www.amazon.com/Desktop-Decor-Golang-Mascot-Gopher/dp/B0C1CSSV2Z",
+                          nombre_producto="Figura de Escritorio Golang Mascot Gopher",
+                          precio="20.00",
+                          descripcion="Decora tu escritorio con esta encantadora figura del Gopher, la mascota de Golang. Perfecta para los amantes de este lenguaje de programación.",
+                          categoria="Merchandising")
+producto22 = InfoProducto(imagen="/merchandising/arduino_know_makers.jpg",
+                          link="https://www.amazon.com/-/es/Camiseta-Arduino-Know-Makers-Negro/dp/B079K9MMXJ",
+                          nombre_producto="Camiseta Arduino Know Makers",
+                          precio="10.00",
+                          descripcion="Demuestra tu pasión por Arduino con esta genial camiseta. Perfecta para los entusiastas de la electrónica y la creación de proyectos.",
+                          categoria="Merchandising")
 
+
+
+def Merchandising_productos() -> rx.component:
+        return rx.box(
+            rx.hstack(
+                producto18.productos(),
+                producto19.productos(),
+                producto20.productos(),
+            ),
+            rx.hstack(
+                producto21.productos(),
+                producto22.productos(),
+            ),
+
+        border_radius=TamañosProductos.BORDES_RADIUS.value,
+        border=TamañosProductos.BORDER.value,
+        box_shadow=TamañosProductos.BOX_SHADOW.value,
+        padding=TamañosProductos.PADDING.value,
+        bg="#000000",
+        width="100%"
+
+        )
 
 def libros_productos() -> rx.Component:
     return rx.box(
@@ -284,7 +336,7 @@ def categorias() -> rx.Component:
                 h="14em" ,
                 w="60%",),
         ),
-        bg = PaletaDeColores.CREMA.value,
+        bg = PaletaDeColores.GRIS.value,
         h="30em",
         width="100%",
         padding=3

@@ -68,8 +68,8 @@ export default function Component() {
 </Heading>
 </Text>
 </HStack>
-  <Heading size={`md`} sx={{"color": "#038bbb"}}>
-  {`tienda tecnologica apartedo de smart home`}
+  <Heading size={`lg`} sx={{"color": "#038bbb"}}>
+  {`tienda tecnologica apartado de smart home`}
 </Heading>
 </Box>
 </HStack>

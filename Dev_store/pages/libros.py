@@ -27,7 +27,7 @@ def biblioteca() -> rx.Component:
             rx.hstack(
                 creditos(),
             ),
-        bg=PaletaDeColores.SKYBLUE.value,
+        bg=PaletaDeColores.FONDO_GRADIENTE.value,
         width="100%"
     )
 

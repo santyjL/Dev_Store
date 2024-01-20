@@ -7,8 +7,8 @@ class PaletaDeColores (Enum):
     AZUL_OSCURO = "#010d23"
     AZUL_INTERMEDIO = "#03223f"
     CELESTE = "#038bbb"
-    CREMA = "#464255"
-    SKYBLUE = "linear-gradient(271.68deg, #F26008 0.75%, #FF3000 88.52%)"
+    GRIS = "#464255"
+    FONDO_GRADIENTE = "linear-gradient(271.68deg, #F26008 0.75%, #FF3000 88.52%)"
 
 class route(Enum):
     Dev_Store="Dev_Store"

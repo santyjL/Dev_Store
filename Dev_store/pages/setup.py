@@ -17,7 +17,7 @@ def setup() -> rx.Component:
             ),
 
                 rx.hstack(
-                    presentacion("tienda tecnologica apartedo de setup"),
+                    presentacion("tienda tecnologica apartado de setup"),
                     margin=tamaños.MARGEN.value
             ),
                 rx.hstack(
@@ -27,7 +27,7 @@ def setup() -> rx.Component:
             rx.hstack(
                 creditos(),
             ),
-        bg=PaletaDeColores.SKYBLUE.value,
+        bg=PaletaDeColores.FONDO_GRADIENTE.value,
         width="100%"
     )
 

@@ -42,7 +42,7 @@ def creditos () -> rx.Component():
         )
      )
      )   ,
-    bg=styles.PaletaDeColores.CREMA.value,
+    bg=styles.PaletaDeColores.GRIS.value,
     width="100%",
     z_indez="5",
     padding_x=30

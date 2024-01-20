@@ -16,7 +16,7 @@ def smart_home() -> rx.Component:
             ),
 
                 rx.hstack(
-                    presentacion("tienda tecnologica apartedo de smart home"),
+                    presentacion("tienda tecnologica apartado de smart home"),
                     margin=tamaños.MARGEN.value
             ),
                 rx.hstack(
@@ -26,7 +26,7 @@ def smart_home() -> rx.Component:
             rx.hstack(
                 creditos(),
             ),
-        bg=PaletaDeColores.SKYBLUE.value,
+        bg=PaletaDeColores.FONDO_GRADIENTE.value,
         width="100%"
     )
 

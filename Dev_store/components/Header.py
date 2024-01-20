@@ -18,7 +18,7 @@ def presentacion(text : str) -> rx.components:
         ),
         rx.heading(text ,
                 color=styles.PaletaDeColores.CELESTE.value,
-                size="md"),
+                size="lg"),
         padding_y=styles.tamaños.ENORME.value
 
     )
@@ -43,7 +43,7 @@ def encabezado() -> rx.Component:
                     href="https://github.com/santyjL/Dev_Store",
                     is_external=True),
 
-            bg=styles.PaletaDeColores.CREMA.value,
+            bg=styles.PaletaDeColores.GRIS.value,
             position="fixed",
             width="100%",
             z_indez="5",

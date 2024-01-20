@@ -68,7 +68,7 @@ export default function Component() {
 </Heading>
 </Text>
 </HStack>
-  <Heading size={`md`} sx={{"color": "#038bbb"}}>
+  <Heading size={`lg`} sx={{"color": "#038bbb"}}>
   {`tienda tecnologica aficionada que lo disfrute`}
 </Heading>
 </Box>
