@@ -76,9 +76,15 @@ export default function Component() {
   <HStack sx={{"margin": "3em"}}>
   <Box sx={{"borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "padding": [3], "bg": "#000000", "width": "100%"}}>
   <HStack>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/GK61-60-intercambiable-retroiluminado-Layout/dp/B0C77FTYW3/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=teclado+mecanico+g61&sr=8-1`} isExternal={true}>
   <Image src={`/setup/GK61.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/GK61-60-intercambiable-retroiluminado-Layout/dp/B0C77FTYW3/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=teclado+mecanico+g61&sr=8-1`} isExternal={true}>
+  <Image src={`/setup/GK61.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`teclado mecanico G61 Logitech`}
@@ -90,9 +96,15 @@ export default function Component() {
   {`PRECIO : 30.00$`}
 </Badge>
 </Box>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
   <Image src={`/setup/monitor ULTRAWIDE.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/GIGABYTE-pantalla-3840x2160-respuesta-DisplayPort/dp/B09WPTKDQY/ref=sr_1_1?keywords=4k+ultrawide+monitor&sr=8-1`} isExternal={true}>
+  <Image src={`/setup/monitor ULTRAWIDE.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`monitor ultrawide 32p''`}
@@ -104,9 +116,15 @@ export default function Component() {
   {`PRECIO : 300$.00$`}
 </Badge>
 </Box>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Astro-A10-Auriculares-micr%C3%B3fono-Playstation/dp/B0C381TXNZ/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=A10%2Bastros&sr=8-6&th=1`} isExternal={true}>
   <Image src={`/setup/Astro A10.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/Astro-A10-Auriculares-micr%C3%B3fono-Playstation/dp/B0C381TXNZ/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=A10%2Bastros&sr=8-6&th=1`} isExternal={true}>
+  <Image src={`/setup/Astro A10.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`Astro A10`}
@@ -120,9 +138,15 @@ export default function Component() {
 </Box>
 </HStack>
   <HStack>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/Logitech-G502-HERO-rendimiento-programables/dp/B07GBZ4Q68/ref=sr_1_1?keywords=logitech+mouse&sr=8-1`} isExternal={true}>
   <Image src={`/setup/G502 Hero.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/Logitech-G502-HERO-rendimiento-programables/dp/B07GBZ4Q68/ref=sr_1_1?keywords=logitech+mouse&sr=8-1`} isExternal={true}>
+  <Image src={`/setup/G502 Hero.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`Logitech G502 HERO`}
@@ -134,9 +158,15 @@ export default function Component() {
   {`PRECIO : 43.00$`}
 </Badge>
 </Box>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/ergon%C3%B3mica-reposapi%C3%A9s-computadora-reposacabezas-reposabrazos/dp/B0C7C1B9D3/ref=cs_sr_dp_3?__mk_es_US=%EF%BF%BDM%EF%BF%BD%7D%EF%BF%BD%EF%BF%BD&keywords=silla+ergonomitca&sr=8-1`} isExternal={true}>
   <Image src={`/setup/silla ergonomica.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/ergon%C3%B3mica-reposapi%C3%A9s-computadora-reposacabezas-reposabrazos/dp/B0C7C1B9D3/ref=cs_sr_dp_3?__mk_es_US=%EF%BF%BDM%EF%BF%BD%7D%EF%BF%BD%EF%BF%BD&keywords=silla+ergonomitca&sr=8-1`} isExternal={true}>
+  <Image src={`/setup/silla ergonomica.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`Silla de oficina ergonómica plegable`}
@@ -148,9 +178,15 @@ export default function Component() {
   {`PRECIO : 109.00$`}
 </Badge>
 </Box>
+<<<<<<< HEAD
   <Box sx={{"padding": [3], "bg": "#03223f", "height": ["28em"], "width": ["26em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em", "whiteSpace": "normal", "textAlling": "start"}}>
   <Link as={NextLink} href={`https://www.amazon.com/-/es/LG-gram-Port%C3%A1til-pulgadas-plataforma/dp/B0BVXQQQRL/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=laptops%2B16%2Bram%2B%2C%2B512%2Bgb%2B%2C%2Bfull%2BHD%2B1080x1980%2B%2C%2B15%2C6pulgadas%2B%2C%2Bintel%2B12&sr=8-6&th=1`} isExternal={true}>
   <Image src={`/setup/lapto.jpg`} sx={{"width": "25em", "height": "10em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "whiteSpace": "normal", "textAlling": "start"}}/>
+=======
+  <Box sx={{"padding": [3], "bg": "#03223f", "height": ["30em"], "width": ["30em"], "borderRadius": ["5px 20px"], "border": ["4px solid #555"], "boxShadow": "sm", "marginY": "0.5em"}}>
+  <Link as={NextLink} href={`https://www.amazon.com/-/es/LG-gram-Port%C3%A1til-pulgadas-plataforma/dp/B0BVXQQQRL/ref=sr_1_6?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=laptops%2B16%2Bram%2B%2C%2B512%2Bgb%2B%2C%2Bfull%2BHD%2B1080x1980%2B%2C%2B15%2C6pulgadas%2B%2C%2Bintel%2B12&sr=8-6&th=1`} isExternal={true}>
+  <Image src={`/setup/lapto.jpg`} sx={{"width": "29em", "height": "14em", "borderRadius": "5px 15px ", "border": "4px solid #555", "boxShadow": "sm", "objectFit": "container"}}/>
+>>>>>>> vercion1.1
 </Link>
   <Heading size={`sm`}>
   {`LG gram`}

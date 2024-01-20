@@ -18,16 +18,16 @@ class route(Enum):
     BIBLIOTECA = "biblioteca"
 
 class TamañosProductos(Enum):
-    WIDTH_IMAGEN="25em"
-    HEIGHT_IMAGEN="10em"
+    WIDTH_IMAGEN="29em"
+    HEIGHT_IMAGEN="14em"
     BORDES_RADIUS_IMAGEN="5px 15px "
     BORDER_IMAGEN="4px solid #555"
 
     BOX_SHADOW="sm"
     SIZE="sm"
     PADDING=3,
-    HEIGHT="28em",
-    WIDTH="26em",
+    HEIGHT="30em",
+    WIDTH="30em",
     BORDES_RADIUS="5px 20px",
     BORDER="4px solid #555",
     MARGIN="0.5em"

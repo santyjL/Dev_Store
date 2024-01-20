@@ -22,6 +22,7 @@ class InfoProducto():
         self.border_imagen=TamañosProductos.BORDER_IMAGEN.value
         self.box_shadow=TamañosProductos.BOX_SHADOW.value
 
+
         self.size=TamañosProductos.SIZE.value
         self.padding=TamañosProductos.PADDING.value
         self.height=TamañosProductos.HEIGHT.value
@@ -40,8 +41,7 @@ class InfoProducto():
                         border_radius=self.border_radius_imagen,
                         border=self.border_imagen,
                         box_shadow=self.box_shadow,
-                        white_space = "normal",
-                        text_alling= "start") ,
+                        object_fit= "container") ,
 
                     href=self.link , is_external=True),
 
@@ -134,37 +134,37 @@ producto11=InfoProducto(imagen="/libros/codigo limpio.jpg",
 producto12 = InfoProducto(imagen="/libros/programador_pragmatico.jpg",
                       link="https://www.amazon.com/Programador-Pragmatico-El-Spanish/dp/020161622X",
                       nombre_producto="El Programador Pragmático",
-                      precio="37.95",
+                      precio="37.95$",
                       descripcion="Un clásico en la programación, aborda conceptos prácticos y eficientes para desarrolladores.",
                       categoria="Libros de Programación")
 producto13 = InfoProducto(imagen="/libros/curso_intensivo_python.jpg",
                       link="https://www.amazon.es/dp/B0CLD7RPNS?creativeASIN=B0CLD7RPNS&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
                       nombre_producto="Curso Intensivo de Python",
-                      precio="49.87",
+                      precio="49.87$",
                       descripcion="Ideal para aprendices como tú, proporciona una inmersión profunda en Python con ejercicios prácticos.",
                       categoria="Libros de Programación")
 producto14 = InfoProducto(imagen="/libros/habitos_atomicos.jpg",
                       link="https://www.amazon.es/dp/B085G3G2CY?creativeASIN=B085G3G2CY&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
                       nombre_producto="Hábitos Atómicos",
-                      precio="19.00",
+                      precio="19.00$",
                       descripcion="Explora cómo pequeños cambios en los hábitos pueden conducir a resultados extraordinarios.",
                       categoria="Desarrollo Personal")
 producto15 = InfoProducto(imagen="/libros/biografia_steve_jobs.jpg",
                       link="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537",
                       nombre_producto="Biografía de Steve Jobs",
-                      precio="21.19",
+                      precio="21.19$",
                       descripcion="Un relato detallado sobre la vida del cofundador de Apple, ofreciendo perspectivas inspiradoras.",
                       categoria="Biografías")
 producto16 = InfoProducto(imagen="/libros/padre_rico_padre_pobre.jpg",
                       link="https://www.amazon.com/Padre-rico-pobre-Rich-Father/dp/1612680194",
                       nombre_producto="Padre Rico, Padre Pobre",
-                      precio="6.39",
+                      precio="6.39$",
                       descripcion="Aborda conceptos financieros esenciales, proporcionando una perspectiva única sobre el dinero.",
                       categoria="Finanzas Personales")
 producto17 = InfoProducto(imagen="/libros/7_habitos_gente_efectiva.jpg",
                       link="https://www.amazon.es/dp/8408143980?creativeASIN=8408143980&asc_item-id=amzn1.ideas.2ZIHJJFJ9AVZ3&ref_=aip_sf_list_spv_ons_d_asin",
                       nombre_producto="Los 7 Hábitos de la Gente Altamente Efectiva",
-                      precio="10.17",
+                      precio="10.17$",
                       descripcion="Un clásico sobre liderazgo personal y eficacia, destacando hábitos fundamentales.",
                       categoria="Desarrollo Personal")
 
@@ -301,7 +301,8 @@ def categorias() -> rx.Component:
 
                 bg="lightblue",
                 h="14em",
-                w="60%"),
+                w="40%"),
+            rx.spacer(bg="white"),
 
             rx.box(
                 rx.heading("MERCHANDISING" , size="xl"),
@@ -327,7 +328,7 @@ def categorias() -> rx.Component:
                 bg="yellow",
                 h="14em" ,
                 w="40%",),
-
+            rx.spacer(bg="white"),
             rx.box(
                 rx.heading("SETUP" , size="xl"),
                 rx.link(
@@ -337,7 +338,7 @@ def categorias() -> rx.Component:
 
                 bg="orange",
                 h="14em" ,
-                w="60%",),
+                w="40%",),
         ),
         bg = PaletaDeColores.GRIS.value,
         h="30em",
