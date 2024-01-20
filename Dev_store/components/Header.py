@@ -1,14 +1,13 @@
-import datetime
 
 import reflex as rx
 
 from Dev_store.components import styles
 
 
-def presentacion() -> rx.components:
+def presentacion(text : str) -> rx.components:
     return rx.box(
         rx.hstack(rx.span(rx.heading("bienvenido a la " ,
-                color="#038bbb",
+                color=styles.PaletaDeColores.CELESTE.value,
                 size="xl")),
 
         rx.span(rx.heading("DEV_STORE",
@@ -17,9 +16,9 @@ def presentacion() -> rx.components:
                 size="2xl",
                 ))
         ),
-        rx.heading("tienda tecnologica aficionada que lo disfrute" ,
-                color="#038bbb",
-                size="md"),
+        rx.heading(text ,
+                color=styles.PaletaDeColores.CELESTE.value,
+                size="lg"),
         padding_y=styles.tamaños.ENORME.value
 
     )
@@ -28,12 +27,23 @@ def presentacion() -> rx.components:
 def encabezado() -> rx.Component:
     return rx.box(
         rx.hstack(
-            rx.heading(rx.text("DEV_STORE",
+            rx.heading(
+                rx.link(
+                rx.text("DEV_STORE",
                                as_="i",
                                size=styles.tamaños.MEDIANO.value),
-            color="#038bbb"),
+            href=styles.route.Dev_Store.value,
+            color=styles.PaletaDeColores.CELESTE.value),
 
-            bg="#e19f41",
+                ),
+            rx.spacer(),
+            rx.link(rx.image(src="/git hub logo.jpg",
+                             witch="4.5em" ,
+                             height="4.5em"),
+                    href="https://github.com/santyjL/Dev_Store",
+                    is_external=True),
+
+            bg=styles.PaletaDeColores.GRIS.value,
             position="fixed",
             width="100%",
             z_indez="5",

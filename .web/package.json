@@ -2,8 +2,8 @@
   "name": "reflex",
   "scripts": {
     "dev": "next dev",
-    "export": "next build",
-    "export-sitemap": "next build && next-sitemap",
+    "export": "next build && next export -o _static",
+    "export-sitemap": "next build && next-sitemap && next export -o _static",
     "prod": "next start"
   },
   "dependencies": {
@@ -11,12 +11,11 @@
     "@chakra-ui/system": "^2.5.7",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@radix-ui/themes": "^2.0.0",
     "axios": "1.4.0",
-    "focus-visible": "^5.2.0",
+    "focus-visible": "5.2.0",
     "framer-motion": "^10.16.4",
     "json5": "2.2.3",
-    "next": "14.0.1",
+    "next": "13.5.4",
     "next-sitemap": "4.1.8",
     "next-themes": "0.2.0",
     "react": "18.2.0",
@@ -27,6 +26,6 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.14",
-    "postcss": "8.4.31"
+    "postcss": "8.4.24"
   }
 }
